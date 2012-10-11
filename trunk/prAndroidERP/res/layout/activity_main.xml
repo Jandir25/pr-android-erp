@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >	
+    <EditText android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:hint="Pase codigo de barras por delante de la cámara..."/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    	<RelativeLayout
+	        android:id="@+id/fieldset1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_margin="10dp"
+	        android:background="@drawable/frame">        
+			<TextView			    
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerInParent="true"			    
+			    android:text="@string/lector_cod_barras" 
+			    />
+	    </RelativeLayout>
+	    <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/frame"
+		    android:padding="5dp"	  
+		    android:text="@string/EtiquetaFieldSet"	    
+		    android:layout_alignLeft="@+id/fieldset1"
+		    android:layout_marginLeft="30dp"
+		     android:textColor="@android:color/black"/>    
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/total"
+	        android:textStyle="bold"/>    
+	    <EditText android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:inputType="text"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/euro"
+	        android:textStyle="bold"/>
+    </LinearLayout>
+    
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+         >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"            
+            android:layout_margin="10dp"                        
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/statelist_boton_rojo"
+            android:text="@string/ActividadMainbtCancelar"
+            android:onClick="btCancelarPulsado" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@drawable/statelist_boton_verde"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/ActividadMainbtConfirmar"
+            android:onClick="btVerdePulsado" />
+
+    </FrameLayout>    
+</LinearLayout>

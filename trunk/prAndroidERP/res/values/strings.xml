@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">prAndroidERP</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="lector_cod_barras">LECTOR COD. BARRAS</string>
+    <string name="ActividadMainbtCancelar">Cancelar</string>
+    <string name="ActividadMainbtConfirmar">Confirmar</string>
+    <string name="EtiquetaFieldSet">Etiqueta</string>
+    <string name="total">Total:</string>
+    <string name="euro">€</string>
+    <color name="rojoSalmon">#FF3333</color>
+    <color name="verde">#ADFF2F</color>
+    <color name="verdeOscuro">#78CA20</color>
+    <color name="grisOscuro">#A9A9A9</color>
+    <color name="rojoOscuro">#8B0000</color>
+
+</resources>
