@@ -41,10 +41,10 @@ public class MainActivity extends Activity {
     	intent.putExtra(EXTRA_MENSAJE,"btCancelar Pulsado");
     	startActivity(intent);*/    	
     	((Button)view).setTextAppearance(this, R.style.boldText);
-    	((Button)view).setTextAppearance(this, R.style.normalText);
+    /*	((Button)view).setTextAppearance(this, R.style.normalText);*/
     }
     public void btVerdePulsado(View view){
     	((Button)view).setTextAppearance(this, R.style.boldText);
-    	((Button)view).setTextAppearance(this, R.style.normalText);
+    	/*((Button)view).setTextAppearance(this, R.style.normalText);*/
     }
 }
