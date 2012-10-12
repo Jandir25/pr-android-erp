@@ -1,14 +1,18 @@
 package com.example.prandroiderp;
 
 import android.os.Bundle;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.support.v4.app.NavUtils;
 
 public class MainActivity extends Activity {
 
-    @Override
+    @TargetApi(11)
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -30,6 +34,16 @@ public class MainActivity extends Activity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    
+    public void btCancelarPulsado(View view){    	
+    	((Button)view).setTextAppearance(this, R.style.estiloBotonPulsado);
+    	((Button)view).setTextAppearance(this, R.style.estiloBotonNormal);
+    }
+    
+    public void btConfirmarPulsado(View view){
+    	((Button)view).setTextAppearance(this, R.style.estiloBotonPulsado);
+    	((Button)view).setTextAppearance(this, R.style.estiloBotonNormal);
     }
 
 }
