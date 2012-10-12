@@ -8,13 +8,24 @@
         	android:layout_height="wrap_content"
         	android:layout_gravity="center_horizontal"        	
         	android:text="@string/main_act_tv1"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <RelativeLayout android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="9"
-        android:layout_margin="10dp"
-        android:background="@drawable/shape_fieldset" >        
+        android:layout_margin="10dp">
+        <RelativeLayout        
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"	               
+	        android:background="@drawable/shape_fieldset"
+	        android:layout_marginTop="11dp" >          
+	    </RelativeLayout>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dp"
+	        android:background="@drawable/shape_fieldset"
+	        android:padding="5dp"
+	        android:text="Lineas Venta"/>
     </RelativeLayout>
+	    
 
 	<RelativeLayout	    
 	    android:layout_width="match_parent"
