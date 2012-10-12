@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:state_pressed="true"
         android:drawable="@drawable/shape_boton_rojo_pulsado"/> <!-- pulsado. -->    
-    <item android:state_focused="true"
+    <item android:state_focused="true"        
         android:drawable="@drawable/shape_boton_rojo_pulsado"/>  <!-- estado con foco. -->    
     <item android:drawable="@drawable/shape_boton_rojo_normal"/> <!-- estado por defecto. -->    
 </selector>

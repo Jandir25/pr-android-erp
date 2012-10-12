@@ -32,6 +32,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentRight="true"	        	        
 	        android:background="@drawable/statelist_boton_verde"
-	        android:text="@string/mainact_btConfirmar" />
+	        android:text="@string/mainact_btConfirmar"
+	         />
 	</RelativeLayout>
 </LinearLayout>
