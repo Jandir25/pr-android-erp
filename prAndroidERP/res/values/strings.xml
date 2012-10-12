@@ -4,5 +4,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
-
+    <string name="main_act_tv1">Esperando lectura cód. barras&#8230;</string>
+    <string name="mainact_btCancelar">Cancelar</string>
+    <string name="mainact_btConfirmar">Confirmar</string>
+	<color name="gris_snow">#CDC9C9</color>
+	<color name="rojo_salmon">#FF6666</color>
+	<color name="rojo_scarlet">#8C1717</color>
+	<color name="gold_green">#AADD00</color>
+	<color name="martini_olive">#8BA446</color>
 </resources>
