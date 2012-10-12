@@ -23,7 +23,7 @@
 	        android:layout_marginLeft="30dp"
 	        android:background="@drawable/shape_fieldset"
 	        android:padding="5dp"
-	        android:text="Lineas Venta"/>
+	        android:text="@string/main_act_tv2"/>
     </RelativeLayout>
 	    
 
