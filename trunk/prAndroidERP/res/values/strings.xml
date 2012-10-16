@@ -8,6 +8,7 @@
     <string name="main_act_tv2">Líneas Venta</string>
     <string name="main_act_btCancelar">Cancelar</string>
     <string name="main_act_btConfirmar">Confirmar</string>
+    <string name="main_act_imgBt_descripcion">Pulse para escanear código de barras.</string>
 	<color name="gris_snow">#CDC9C9</color>
 	<color name="rojo_salmon">#FF6666</color>
 	<color name="rojo_scarlet">#8C1717</color>
