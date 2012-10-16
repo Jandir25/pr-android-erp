@@ -3,10 +3,13 @@ package com.example.prandroiderp;
 
 
 
+import com.example.venta.Venta;
+
 import android.os.Bundle;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.ListFragment;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,10 +28,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getActionBar().setDisplayHomeAsUpEnabled(true);
-        
-        ArticulosFragment fragmento=new ArticulosFragment();        
-        getSupportFragmentManager().beginTransaction().add(R.id.contenedor_fragmento, fragmento).commit();
-        
+                                       
     }
 
     @Override
@@ -59,6 +59,12 @@ public class MainActivity extends FragmentActivity {
 	         String contents = intent.getStringExtra("SCAN_RESULT");
 	         String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
 	         // Handle successful scan
+	         Venta.addListadoArticulos(contents);
+	         FragmentManager fm= getSupportFragmentManager();
+	         CabecerasArticuloFragment fragment=(CabecerasArticuloFragment) fm.findFragmentById(R.id.fragmento_cabecera);
+	         fragment.getListView().invalidateViews();
+	         
+	         
 	         
 	      } else if (resultCode == RESULT_CANCELED) {
 	         // Handle cancel

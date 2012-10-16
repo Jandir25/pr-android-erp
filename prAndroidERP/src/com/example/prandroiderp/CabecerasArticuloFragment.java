@@ -10,7 +10,7 @@ import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-public class ArticulosFragment extends ListFragment{
+public class CabecerasArticuloFragment extends ListFragment{
 	
 	
 	/*
@@ -26,6 +26,7 @@ public class ArticulosFragment extends ListFragment{
                 android.R.layout.simple_list_item_activated_1 : android.R.layout.simple_list_item_1;
         
         setListAdapter(new ArrayAdapter<String>(getActivity(), layout, Venta.getListadoArticulos()));
+        
 	}
 	
 }

@@ -23,15 +23,22 @@
     <RelativeLayout android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="9"
-        android:layout_margin="10dp">
-        <RelativeLayout
-            android:id="@+id/contenedor_fragmento"        
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"	               
-	        android:background="@drawable/shape_fieldset"
-	        android:layout_marginTop="11dp" >
-	        	                 
-	    </RelativeLayout>
+        android:layout_margin="10dp">        
+		<LinearLayout 	android:layout_width="match_parent"
+		    			android:layout_height="match_parent"
+		    			android:background="@drawable/shape_fieldset"
+		    			android:layout_marginTop="11dp"
+		    			android:orientation="horizontal" >
+		    			<fragment android:id="@+id/fragmento_cabecera"
+		    			    	  android:name="com.example.prandroiderp.CabecerasArticuloFragment"
+		    			    	  android:layout_width="0dp"
+		    			    	  android:layout_height="match_parent"
+		    			    	  android:layout_weight="1"/>
+		    			<!--  INTRODUCIR FRAGMENTO VISUALIZACION ARTICULO -->
+		    			<FrameLayout android:layout_width="0dp"
+		    			    		android:layout_height="match_parent"
+		    			    		android:layout_weight="2"/>		    			    
+		</LinearLayout>	        	                 	    
 	    <TextView android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginLeft="30dp"
