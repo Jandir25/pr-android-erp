@@ -40,9 +40,10 @@ public class Acreditacion implements Server.AuthorizationCodeListener {
 	//	}
 	//}
 
+	private static String urlConsentimiento="";
 	private static final String CLIENTSECRETS_LOCATION= "client_secrets.json";
-	
-	private static final String REDIRECT_URI = "http://localhost:9013/";
+	private static final String PORT="9013";
+	private static final String REDIRECT_URI = "http://localhost:"+PORT+"/";
 	
 	private static final List<String> SCOPES = Arrays.asList(
 			"https://www.googleapis.com/auth/drive.file",
@@ -53,9 +54,27 @@ public class Acreditacion implements Server.AuthorizationCodeListener {
 	
 	
 	private static String authorizationCode="";
+	
+	
+	/*Getter y Setter authorizationCode*/
+	public String getAuthorizationCode(){
+		return authorizationCode;
+	}
+	/*Getter  y Setter urlConsentimiento*/
+	public String getUrlConsentimiento(){
+		return urlConsentimiento;
+	}
+	public void setUrlConsentimiento(String url){
+		urlConsentimiento=url;
+	}
+	/*Getter y setter para el puerto de redireccionamiento*/
+	public String getPuerto(){
+		return PORT;
+	}
 	/*
 	 * Excepcion lanzada cuando un error da lugar mientras se recuperan las credenciales
 	 */
+	
 	public static class GetCredentialsException extends Exception{
 		protected String authorizationUrl;
 		
@@ -222,7 +241,8 @@ public class Acreditacion implements Server.AuthorizationCodeListener {
 		GoogleAuthorizationCodeRequestUrl urlBuilder =
 				getFlow().newAuthorizationUrl().setRedirectUri(REDIRECT_URI).setState(state);
 		urlBuilder.set("user_id", emailAddress);
-		return urlBuilder.build();
+		urlConsentimiento=urlBuilder.build();
+		return urlConsentimiento;
 	}
 	
 	/**
