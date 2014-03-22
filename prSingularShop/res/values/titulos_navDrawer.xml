@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_titulos_navDrawer">
+        <item>Venta</item>
+        <item>Inventario</item>
+        <item>Contabilidad</item>
+        <item>Proveedores</item>
+    </string-array>
+</resources>
