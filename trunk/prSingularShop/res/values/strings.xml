@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SingularShopERP</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="fragmento_nuevaVenta_principal_btDescripcion">Pulse botón para escanear código de barras</string>
+	<string name="fragmento_nuevaventa_tv2">Líneas Venta</string>
+	<string name="fragmento_nuevaventa_principal_btCancelar">Cancelar</string>
+	<string name="fragmento_nuevaventa_principal_btConfirmar">Confirmar</string>
+	
+	<color name="gris_snow">#CDC9C9</color>
+	<color name="rojo_salmon">#FF6666</color>
+	<color name="rojo_scarlet">#8C1717</color>
+	<color name="gold_green">#AADD00</color>
+	<color name="martini_olive">#8BA446</color>
+</resources>
